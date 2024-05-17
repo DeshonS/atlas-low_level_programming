@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * 
  * Description: 'reads a string from a variable and prints the string'
  * @parameter: str identifies the string to print
- * 
  * Return: Always 0 (Success)
  */
 int main(void)
