@@ -2,7 +2,6 @@
 /**
  * main - Entry point
  * Description: 'reads a string from a variable and prints the string'
- * @parameter: str
  * Return: Always 0 (Success)
  */
 int main(void)
