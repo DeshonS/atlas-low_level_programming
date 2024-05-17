@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+main(){
+gcc -E $CFILE -o c
+}
+
