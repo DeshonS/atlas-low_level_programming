@@ -1,5 +1,12 @@
 #include <stdio.h>
-/*Script to print a string*/
+/**
+ * main - Entry point
+ * 
+ * Description: 'reads a string from a variable and prints the string'
+ * @parameter: str identifies the string to print
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char *str = ("\"Programming is like building a multilingual puzzle");
