@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * Description: 'generates a random number then determines if the number is positive, negative, or nil'
+ * Description: 'determines a random numbers value'
  * Return: Always 0 (Success)
  */
 
