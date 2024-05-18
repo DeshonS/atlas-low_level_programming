@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	int x;
+	char x;
 	for(x = 'a'; x <= 'z'; x++)
 	{
-	char putchar("%c\n", x);
+	putchar("%c\n", x);
 	}
 	return 0;
 }
