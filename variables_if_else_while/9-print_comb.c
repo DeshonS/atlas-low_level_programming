@@ -20,7 +20,7 @@ int main(void)
 		}
 		else if (x == 9)
 		{
-		putchar('0' + x);
+		continue;
 		}
 	}
 	putchar('\n');
