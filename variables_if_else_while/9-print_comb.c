@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (x > 0)
 		{
-		putchar(', ');
+		putchar(",");
 		putchar('0' + x);
 		}
 		else
