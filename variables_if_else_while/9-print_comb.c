@@ -12,15 +12,14 @@ int main(void)
 
 	for (x = 0; x <= 10; x++)
 	{
-		if (x != 9)
-		{
+		
 		putchar('0' + x);
-		putchar(',');
-		putchar(' ');
-		}
-		else if (x == 10)
+		if (x == 9)
 		{
 		continue;
+		}
+		putchar(',');
+		putchar(' ');
 		}
 	}
 	putchar('\n');
