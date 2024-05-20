@@ -15,14 +15,21 @@ void times_table(void)
 		for (y = 0; y <= 10; y++)
 		{
 			int z;
-			z = ((x * y) + '0');
-			_putchar(z);
-			if (y == 9)
-				continue;
-
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			z = x * y;
+			if (y != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (z <= 9 && y != 0)
+			{
+				_putchar(' ');
+			}
+			if (z > 9)
+			{
+				_putchar((z / 10) + '0');
+			}
+			_putchar((z % 10) + '0');
 		}
 	_putchar('\n');
 	}
