@@ -3,7 +3,8 @@
 /**
  * _islower - Opening of file
  * Description - 'checks to see if a charachter is lowercase'
- * Return - Always 0 (Success)
+ * Parameter - 'int c is a letter input'
+ * Return - If lowercase (0), if uppercase (1)
  */
 
 int _islower(int c)
