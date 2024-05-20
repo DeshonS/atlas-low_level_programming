@@ -2,7 +2,7 @@
 
 /**
  * _abs - opening of file
- * @n: the int to check
+ * @r: the int to check
  * Return: the absolute value of int
  */
 
