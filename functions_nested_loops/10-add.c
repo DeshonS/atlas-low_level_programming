@@ -10,11 +10,9 @@
 
 int add(int n, int o)
 {
-	int n;
-	int o;
 	int p;
 
 	p = n + o;
-	_putchar(p);
-	return (0);
+
+	return (p);
 }
