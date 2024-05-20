@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_last_digit - opening of file
+ * print_last_digit - opening of file
  * @r: the int to check
  * Return: the last digit of r
  */
