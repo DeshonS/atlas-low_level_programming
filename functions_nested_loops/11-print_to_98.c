@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints from an integer to 98
- * @n - number to be used to print from
+ * @n - print from this number
  * Return: always 0 (Success)
  */
 
