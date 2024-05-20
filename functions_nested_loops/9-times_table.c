@@ -8,8 +8,10 @@
 
 void times_table(void)
 {
+	int x;
 	for (x = 0; x <= 10; x++)
 	{
+		int y;
 		for (y = 0; y <= 10; y++);
 		{
 			int z;
@@ -22,6 +24,7 @@ void times_table(void)
 			_putchar(' ');
 			_putchar(' ');
 		}
+	_putchar('\n');
 	}
 }
 
