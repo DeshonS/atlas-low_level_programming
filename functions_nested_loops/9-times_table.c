@@ -18,11 +18,8 @@ void times_table(void)
 
 		while (y < 10)
 		{
-		int z;	
+		unsigned int z;	
 		z = ((x * y) + '0');
-		if (z < 0)
-			z = -z;
-
 		_putchar(z);
 		if (y == 10)
 			continue;
