@@ -8,7 +8,7 @@
  * Return - Always 0 (Success)
  */
 
-int add(int, int)
+int add(int n, int o)
 {
 	int n;
 	int o;
