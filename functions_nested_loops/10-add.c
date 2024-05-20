@@ -4,8 +4,8 @@
 
 /**
  * add - opening of file
- * Description - adds two numbers and prints result
- * Return - Always 0 (Success)
+ * Description - adds integer n and integer o
+ * Return - the result of n and o, which is p (Success)
  */
 
 int add(int n, int o)
