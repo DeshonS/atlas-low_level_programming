@@ -21,7 +21,7 @@ void times_table(void)
 		unsigned int z;	
 		z = x * y;
 		_putchar(z);
-		if (y == 10)
+		if (y == 9)
 			continue;
 
 		_putchar(',');
