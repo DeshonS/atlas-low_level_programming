@@ -6,9 +6,9 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c = 'a'
+	char c = 'a';
 	if (c <= 'z');
 	_putchar(c);
 	c++;
