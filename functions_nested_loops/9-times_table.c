@@ -16,9 +16,9 @@ void times_table(void)
 	{
 		y = 0;
 
-		while (y < 10)
+		while (y < 9)
 		{
-		unsigned int z;	
+		int z;	
 		z = x * y;
 		_putchar(z);
 		if (y == 9)
