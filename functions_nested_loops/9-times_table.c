@@ -16,10 +16,10 @@ void times_table(void)
 	{
 		y = 0;
 
-		while (y < 9)
+		while (y < 10)
 		{
 		int z;	
-		z = ((x * y) + '0');
+		z = (x * y);
 		_putchar(z);
 		if (y == 9)
 			continue;
