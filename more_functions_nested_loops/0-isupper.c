@@ -2,8 +2,8 @@
 
 /**
  * _isupper - opening of file
- * @c - char being checked for uppercase
- * Return - 1 if uppercase, 0 if lower case
+ * @c: char being checked for uppercase
+ * Return: 1 if uppercase, 0 if lower case
  */
 
 int _isupper(int c)
