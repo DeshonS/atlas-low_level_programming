@@ -2,7 +2,7 @@
 
 /**
  * _strlen - opening of file
- * @s - string to be analyzed for charachter count
+ * @s: string to be analyzed for charachter count
  * Return: Always 0 (Success)
  */
 
