@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - opening of file
- * @*n: pointer to variable to be changed
+ * @n: pointer to variable to be changed
  * Return: Always 0 (Success)
  */
 
