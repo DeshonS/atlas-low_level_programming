@@ -9,9 +9,6 @@ char *_strcat(char *dest, char *src)
         ptr++;
     }
 
-    *ptr = ' ';
-    ptr++;
-
     while (*src != '\0')
     {
         *ptr = *src;
