@@ -23,15 +23,3 @@ char *_strcat(char *dest, char *src)
 
     return dest;
 }
-
-int main()
-{
-    char dest[98] = "Hello";
-    char src[] = "World!";
-
-    _strcat(dest, src);
-
-    printf("%s", dest);
-
-    return 0;
-}
