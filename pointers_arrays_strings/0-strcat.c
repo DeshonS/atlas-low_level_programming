@@ -2,22 +2,36 @@
 
 char *_strcat(char *dest, char *src)
 {
-    int i = 0;
-    char *p = dest;
+    char *ptr = dest;
 
-    while(*p != '\0')
+    while(*ptr != '\0')
     {
-        i++;
+        ptr++;
     }
+
+    *ptr = ' ';
+    ptr++;
 
     while (*src != '\0')
     {
-        *p = *src;
-        p++;
+        *ptr = *src;
+        ptr++;
         src++;
     }
 
-    *p = '\0';
+    *ptr = '\0';
 
     return dest;
+}
+
+int main()
+{
+    char dest[98] = "Hello";
+    char src[] = "World!";
+
+    _strcat(dest, src);
+
+    printf("%s", dest);
+
+    return 0;
 }
