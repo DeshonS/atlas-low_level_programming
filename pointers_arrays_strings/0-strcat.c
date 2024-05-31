@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ * _strcat - function that splices two strings together
+*/
 char *_strcat(char *dest, char *src)
 {
 char *ptr = dest;
