@@ -22,5 +22,5 @@ ptr++;
 src++;
 n--;
 }
-return(dest);
+return (dest);
 }
