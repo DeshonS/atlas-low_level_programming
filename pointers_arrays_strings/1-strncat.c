@@ -5,6 +5,7 @@
  * @dest: First half of the string being spliced, also the final product
  * @src: Second half of the string being spliced
  * @n: number of charachters to be spliced from each string
+ * Return: Always 0 (Success)
 */
 
 char *_strncat(char *dest, char *src, int n)
