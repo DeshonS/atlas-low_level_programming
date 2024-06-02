@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - opening of file
- * @*: string to be converted
+ * @t: string to be converted
  * Return: Always 0 (Success)
 */
 
