@@ -8,9 +8,9 @@
 
 char *cap_string(char *x)
 {
-int i = 0;
+int i;
 
-while (x[i] != '\0')
+for (i = 0; x[i] != '\0'; i++)
 {
 if (x[i] == ' ' + 1)
 {
