@@ -24,5 +24,5 @@ else
 return (NULL);
 }
 }
-return (j);
+return (&j);
 }
