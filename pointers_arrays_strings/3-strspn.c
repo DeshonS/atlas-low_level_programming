@@ -16,7 +16,7 @@ while (*s != '\0')
 {
 for (x = accept; *x; x++)
 {
-if (*s = x)
+if (*s == *x)
 {
 break;
 }
