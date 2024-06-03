@@ -5,6 +5,7 @@
  * @s: string to be converted
  * @b: char to replace memory with
  * @n: number of charachters to replace
+ * Return: Always 0 (Success)
 */
 
 char *_memset(char *s, char b, unsigned int n)
