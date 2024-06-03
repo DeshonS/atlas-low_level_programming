@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-int i;
+int i = 0;
 char j;
 
 while (s[i] != '\0')
