@@ -17,7 +17,7 @@ for (x = accept; *x; x++)
 {
 if (*s == *x)
 {
-    return (s);
+return (s);
 }
 }
 s++;
