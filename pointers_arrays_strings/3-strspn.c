@@ -23,10 +23,11 @@ break;
 if (*x == '\0')
 {
 break;
+
+}
+}
 i++;
 s++;
-}
-}
 }
 return (i);
 }
