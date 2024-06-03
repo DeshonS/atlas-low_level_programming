@@ -19,7 +19,7 @@ i++;
 }
 else if (s[i] == c)
 {
-return (s[i]);
+return (s);
 }
 else
 {
