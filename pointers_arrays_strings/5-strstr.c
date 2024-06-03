@@ -17,13 +17,13 @@ while (*haystack != '\0')
 {
 while (*needle && *haystack == *needle)
 {
-haystack++;
 needle++;
 }
 if (*needle == '\0')
 {
 return (haystack);
 }
+haystack++;
 }
 return (NULL);
 }
