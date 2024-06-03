@@ -26,4 +26,5 @@ if (*haystack != *needle)
 break;
 }
 }
+return (NULL);
 }
