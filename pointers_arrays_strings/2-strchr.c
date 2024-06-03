@@ -21,6 +21,7 @@ i++;
 else if (s[i] == c)
 {
 j = s;
+continue;
 }
 else
 {
