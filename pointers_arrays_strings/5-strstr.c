@@ -18,11 +18,7 @@ for (; *haystack != '\0'; haystack++)
 if (*haystack == *needle)
 {
 return (haystack);
-}
 needle++;
-if (*haystack != *needle)
-{
-break;
 }
 }
 return (NULL);
