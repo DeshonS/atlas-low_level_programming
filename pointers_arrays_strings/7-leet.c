@@ -17,11 +17,11 @@ spec['o'] = spec['O'] = 0;
 spec['t'] = spec['T'] = 7;
 spec['l'] = spec['L'] = 1;
 
-while (x[i] != '\0')
+while (*x)
 {
-if (x[i] == spec)
+if (spec[*x])
 {
-x[i] = spec[x[i]];
+*x = spec[*x];
 }
 i++;
 }
