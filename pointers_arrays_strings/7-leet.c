@@ -21,9 +21,9 @@ while (*x)
 {
 if (spec[*x])
 {
-*x = spec[*x];
+x = spec[*x];
 }
-i++;
+x++;
 }
-return (x);
+return (new);
 }
