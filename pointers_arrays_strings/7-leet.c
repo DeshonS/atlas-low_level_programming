@@ -2,7 +2,7 @@
 
 /**
  * leet - opening of file
- * @spec: string to be modified
+ * @x: string to be modified
  * Return: Always 0 (Success)
 */
 
