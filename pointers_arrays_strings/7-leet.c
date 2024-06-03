@@ -18,9 +18,9 @@ spec['l'] = spec['L'] = '1';
 
 while (*x)
 {
-if (spec[*x])
+if (spec[(unsigned char)*x])
 {
-*x = spec[*x];
+*x = spec[(unsigned char)*x];
 }
 x++;
 }
