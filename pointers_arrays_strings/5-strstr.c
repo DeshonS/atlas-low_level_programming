@@ -15,7 +15,11 @@ return (haystack);
 }
 for (; *haystack != '\0'; haystack++)
 {
-if (*haystack == *needle)
+if (*haystack != *needle)
+{
+continue;
+}
+else if (*haystack == *needle)
 {
 return (haystack);
 needle++;
