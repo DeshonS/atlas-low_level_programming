@@ -19,7 +19,6 @@ if (*haystack == *needle)
 {
 return (haystack);
 }
-haystack++;
 needle++;
 if (*haystack != *needle)
 {
