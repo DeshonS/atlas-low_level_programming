@@ -13,16 +13,16 @@ if (*needle == '\0')
 {
 return (haystack);
 }
-for (; *haystack != '\0'; haystack++)
+while (*haystack != '\0')
 {
-if (*haystack == *needle)
+while (*needle && *haystack == *needle)
 {
-return (haystack);
+haystack++;
 needle++;
 }
-if (*haystack != *needle)
+if (*needle == '\0')
 {
-continue;
+return (haystack);
 }
 }
 return (NULL);
