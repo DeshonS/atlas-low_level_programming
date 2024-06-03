@@ -8,7 +8,6 @@
 
 char *leet(char *x)
 {
-int i;
 char *new = x;
 char spec[128] = {0};
 spec['a'] = spec['A'] = '4';
@@ -21,7 +20,7 @@ while (*x)
 {
 if (spec[*x])
 {
-x = spec[*x];
+*x = spec[*x];
 }
 x++;
 }
