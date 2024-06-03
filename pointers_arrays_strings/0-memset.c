@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * memset - opening of file
+ * _memset - opening of file
  * @s: string to be converted
  * @b: char to replace memory with
  * @n: number of charachters to replace
