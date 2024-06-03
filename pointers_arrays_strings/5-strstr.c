@@ -22,7 +22,7 @@ needle++;
 }
 if (*haystack != *needle)
 {
-break;
+continue;
 }
 }
 return (NULL);
