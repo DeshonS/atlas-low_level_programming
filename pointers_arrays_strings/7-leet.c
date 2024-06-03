@@ -11,11 +11,11 @@ char *leet(char *x)
 int i;
 char *new = x;
 char spec[128] = {0};
-spec['a'] = spec['A'] = 4;
-spec['e'] = spec['E'] = 3;
-spec['o'] = spec['O'] = 0;
-spec['t'] = spec['T'] = 7;
-spec['l'] = spec['L'] = 1;
+spec['a'] = spec['A'] = '4';
+spec['e'] = spec['E'] = '3';
+spec['o'] = spec['O'] = '0';
+spec['t'] = spec['T'] = '7';
+spec['l'] = spec['L'] = '1';
 
 while (*x)
 {
