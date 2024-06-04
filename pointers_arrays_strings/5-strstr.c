@@ -24,7 +24,7 @@ while (*n && *h == *n)
 h++;
 n++;
 }
-if (*needle == '\0')
+if (*n == '\0')
 {
 return (haystack);
 }
