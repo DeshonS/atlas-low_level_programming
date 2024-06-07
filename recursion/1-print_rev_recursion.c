@@ -13,6 +13,6 @@ void _print_rev_recursions(char *s)
     {
         return;
     }
-    printf("%c", *s)
+    printf("%c", *s);
     _print_rev_recursions(s--);
 }
