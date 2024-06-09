@@ -21,5 +21,5 @@ int sqrt_o(int n, int y)
 
 int _sqrt_recursion (int n)
 {
-    return (sqrt_o(1, n));
+    return (sqrt_o(0, n));
 }
