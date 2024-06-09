@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - opening of file
- * sqrt_o: function to check conditions of n and y and return result
+ * sqrt_o - function to check conditions of n and y and return result
  * @n: value that the code will return the square root of
  * @y: value that math result of x is compared to for return purposes
  * Return: Always 0 (Success)
