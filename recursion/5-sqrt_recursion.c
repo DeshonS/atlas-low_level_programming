@@ -2,7 +2,6 @@
 
 /**
  * sqrt_o - function to check conditions of n and y and return result
- * _sqrt_recursion - opening of file
  * @n: value that the code will return the square root of
  * @y: value that math result of x is compared to for return purposes
  * Return: Always 0 (Success)
@@ -20,6 +19,11 @@ return (-1);
 }
 return (sqrt_o(n + 1, y));
 }
+/**
+ * _sqrt_recursion - opening of file
+ * @n: number to get the square root value
+ * Return: Always 0 (Success)
+*/
 int _sqrt_recursion(int n)
 {
 return (sqrt_o(1, n));
