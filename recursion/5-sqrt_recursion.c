@@ -8,18 +8,17 @@
 
 int sqrt_o(int n, int y)
 {
-    if(n * n == y)
-    {
-        return (n);
-    }
-    if (n * n > y)
-    {
-        return (-1);
-    }
-    return (sqrt_o(n + 1, y));
+if(n * n == y)
+{
+return (n);
 }
-
+if (n * n > y)
+{
+return (-1);
+}
+return (sqrt_o(n + 1, y));
+}
 int _sqrt_recursion (int n)
 {
-    return (sqrt_o(0, n));
+return (sqrt_o(1, n));
 }
