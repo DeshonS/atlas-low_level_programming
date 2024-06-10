@@ -22,5 +22,9 @@ int primecheck(int x, int y)
 
 int is_prime_number(int n)
 {
+    if (n <= 1)
+    {
+        return (0);
+    }
     return (primecheck(n, 2));
 }
