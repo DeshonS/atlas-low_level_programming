@@ -9,22 +9,22 @@
 
 int primecheck(int x, int y)
 {
-    if (x == y)
-    {
-        return (1);
-    }
-    if (x % y == 0)
-    {
-        return (0);
-    }
-    return (primecheck(x, y + 1));
+if (x == y)
+{
+return (1);
+}
+if (x % y == 0)
+{
+return (0);
+}
+return (primecheck(x, y + 1));
 }
 
 int is_prime_number(int n)
 {
-    if (n <= 1)
-    {
-        return (0);
-    }
-    return (primecheck(n, 2));
+if (n <= 1)
+{
+return (0);
+}
+return (primecheck(n, 2));
 }
