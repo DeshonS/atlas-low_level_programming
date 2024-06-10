@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     int i;
     for (i = 0; i < argc;)
     {
-        printf("%c\n", argv[argc]);
+        printf("%d\n", argv[argc]);
         i++;
     }
     return (0);
