@@ -19,7 +19,11 @@ return (0);
 }
 return (primecheck(x, y + 1));
 }
-
+/**
+ * is_prime_number - opening of file
+ * @n: number to check for prime status
+ * Return: Result of primecheck
+*/
 int is_prime_number(int n)
 {
 if (n <= 1)
