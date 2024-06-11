@@ -1,29 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - opening of file
  * @argc: arg counter
  * @argv: array containing numbers to add
- * Return: 0 if successful, 1 if error
-*/
+ * Return: 1 if error, 0 if success
+ */
 
 int main(int argc, char *argv[])
+
 {
-    if (argc == NULL)
+    int x, y, add = 0;
+
+    for (x = 1; x < argc; x++)
+
     {
-        printf("0\n");
+        for (y = 0; argv[y][y] != '\0'; y++)
+        {
+            if (!isdigit(argv[x][y]))
+            {
+                printf("Error\n");
+                return (1);
+            }
+        }
+        add = add + atoi(argv[x]);
     }
-    if (argv[1] != 0-9 || argv[2] != 0-9)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    else
-    {
-        int a = atoi(argv[1]);
-        int b = atoi(argv[2]);
-        int res = a + b;
-        printf("%d\n", res);
-    }
+    printf("%d\n", add);
+    return (0);
 }
