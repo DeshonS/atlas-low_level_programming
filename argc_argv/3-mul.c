@@ -16,7 +16,9 @@ return (1);
 }
 else
 {
-int res = atoi(argv[1]) * atoi(argv[2]);
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
+int res = a * b;
 printf("%d\n", res);
 }
 return (0);
