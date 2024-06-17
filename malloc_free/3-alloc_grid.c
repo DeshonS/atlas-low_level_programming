@@ -25,7 +25,7 @@ return (NULL);
 for (x = 0; x < height; x++)
 {
 a[x] = malloc(width * sizeof(**a));
-if(a[x] == NULL)
+if (a[x] == NULL)
 {
 for (x--; x >= 0; x--)
 free(a[x]);
