@@ -15,7 +15,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-for (x = 0; x != '\0'; x++)
+for (x = 0; str[x] != '\0'; x++)
 {
 ;
 }
