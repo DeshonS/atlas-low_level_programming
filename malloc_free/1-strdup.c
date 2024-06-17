@@ -4,6 +4,7 @@
 /**
  * *_strdup - opening of file
  * @str: the string that the return is a duplicate of
+ * Return: If successful, pointer to dupe of string, otherwise NULL
  */
 
 char *_strdup(char *str)
