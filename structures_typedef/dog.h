@@ -1,6 +1,10 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+/**
+ * struct dog - opening of file
+ */
+
 struct dog
 {
 char *name;
