@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include "dog.h"
 
-struct dog
-{
-    char *name;
-    float age;
-    char *owner;
-} my_dog;
+/**
+ * init_dog - opening of file
+ * @d: reference to struct dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner) {
     if (d != NULL) {
