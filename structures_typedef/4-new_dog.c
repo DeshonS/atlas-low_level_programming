@@ -6,10 +6,11 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *x;
-x = malloc(sizeof(dog_t));
 int i, j;
+x = malloc(sizeof(dog_t));
 x->name = malloc(i + 1);
 x->owner = malloc(j + 1);
+
 
 for (i = 0; i != name['\0']; i++)
 {
