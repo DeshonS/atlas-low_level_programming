@@ -25,7 +25,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
         printf("%d\n", va_arg(args, int));
         printf("%s\n", separator);
     }
-    va_exit(args);
-
-    return (0);
+    va_end(args);
 }
