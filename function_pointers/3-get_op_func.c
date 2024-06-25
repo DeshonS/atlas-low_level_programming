@@ -18,13 +18,14 @@ op_t ops[] = {
 {"/", op_div},
 {NULL, NULL}
 };
-int i;
-for (i = 0; ops[i].op != NULL; i++)
+int i = 0;
+while (ops[i].op != NULL)
 {
 if(ops[i].op[0] == s[0] && s[1] == '\0')
 {
 return ops[i].f;
-}  
+}
+i++;
 }
 return (NULL);
 }
