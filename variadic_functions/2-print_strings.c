@@ -27,11 +27,11 @@ str = nil;
 }
 if (separator == NULL || i == n - 1)
 {
-printf("%s", va_arg(args, char *));
+printf("%s", str);
 }
 else
 {
-printf("%s%s", va_arg(args, char *), separator);
+printf("%s%s", str, separator);
 }
 }
 printf("\n");
