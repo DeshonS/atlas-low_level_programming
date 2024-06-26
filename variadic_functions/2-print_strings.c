@@ -21,7 +21,7 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 str = va_arg(args, char *);
-if (va_arg(args, char *) == NULL)
+if (str == NULL)
 {
 str = nil;
 }
