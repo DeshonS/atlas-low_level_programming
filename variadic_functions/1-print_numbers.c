@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - opening of file
- * @seperator: divider between numbers
+ * @separator: divider between numbers
  * @n: number of args
  * Return: string of numbers
  */
