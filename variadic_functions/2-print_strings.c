@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 {
 if (va_arg(args, char *) == NULL)
 {
-va_arg(args, char *) == nil;
+va_arg(args, char *) = nil;
 }
 if (separator == NULL || i == n - 1)
 {
