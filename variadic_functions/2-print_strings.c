@@ -20,11 +20,11 @@ for (i = 0; i < n; i++)
 {
 if (separator == NULL || i == n - 1)
 {
-printf("%d", va_arg(args, int));
+printf("%s", va_arg(args, char *));
 }
 else
 {
-printf("%d%s", va_arg(args, int), separator);
+printf("%s%s", va_arg(args, char *), separator);
 }
 }
 printf("\n");
