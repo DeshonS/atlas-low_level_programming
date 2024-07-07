@@ -1,0 +1,1 @@
+Linked lists are amazing!
