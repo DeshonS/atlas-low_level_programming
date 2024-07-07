@@ -1,9 +1,10 @@
 #ifndef MAIN_FILE
 #define MAIN_FILE
 
-/*
-struct list - linked list
+/**
+ * struct list - linked list
 */
+
 typedef struct list
 {
 char *str;
