@@ -2,7 +2,7 @@
 #define MAIN_FILE
 
 /*
-* @struct list: contains data
+* struct list - linked list
 */
 typedef struct list
 {
