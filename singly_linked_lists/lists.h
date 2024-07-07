@@ -3,6 +3,9 @@
 
 /**
  * struct list - linked list
+ * @str: stored string
+ * @len: length of string
+ * @next: pointer to next pointer in the list
 */
 
 typedef struct list
