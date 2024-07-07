@@ -4,7 +4,6 @@
 /**
 * print_list - opening of file
 * @h: pointer to a list
-* @struct list: contains data
 * Return: Number of nodes
 */
 

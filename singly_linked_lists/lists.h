@@ -1,6 +1,9 @@
 #ifndef MAIN_FILE
 #define MAIN_FILE
 
+/*
+* @struct list: contains data
+*/
 typedef struct list
 {
 char *str;
