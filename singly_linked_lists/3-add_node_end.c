@@ -22,7 +22,7 @@ return (NULL);
 }
 if (str)
 {
-new->str = _strdup(str);
+new->str = strdup(str);
 while (str[i] != '\0')
 i++;
 new->len = i;
