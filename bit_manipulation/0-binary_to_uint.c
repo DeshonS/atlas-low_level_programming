@@ -21,8 +21,8 @@ if (b[i] != '0' && b[i] != '1')
 {
 return (0);
 }
-newint << 1;
-if (b == '1')
+newint <<= 1;
+if (b[i] == '1')
 {
 newint = newint + 1;
 }
