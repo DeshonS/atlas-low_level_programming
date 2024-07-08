@@ -23,8 +23,8 @@ return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 {
 new->str = strdup(str);
-new->len = i;
 }
+new->len = i;
 new->next = NULL;
 if (*head != NULL)
 {
