@@ -22,9 +22,10 @@ return (NULL);
 }
 if (str)
 {
+for (i = 0; str[i] != '\0'; i++)
+{
 new->str = strdup(str);
-while (str[i] != '\0')
-i++;
+}
 new->len = i;
 }
 else
