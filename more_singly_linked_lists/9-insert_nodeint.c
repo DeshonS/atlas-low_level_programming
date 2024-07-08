@@ -29,7 +29,7 @@ new->next = *head;
 *head = new;
 return (*head);
 }
-for (i = 0; head != NULL; i++)
+for (i = 0; ptr != NULL; i++)
 {
 if (i == idx - 1)
 {
