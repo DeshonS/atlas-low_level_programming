@@ -17,7 +17,7 @@ listint_t *new, *ptr;
 
 new = malloc(sizeof(listint_t));
 
-if(new == NULL)
+if (new == NULL)
 {
 return (NULL);
 }
