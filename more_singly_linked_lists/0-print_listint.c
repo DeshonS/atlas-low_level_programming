@@ -13,7 +13,7 @@ size_t i = 0;
 
 while (h != NULL)
 {
-printf("[0] (nil)\n");
+printf("%d\n", h->n);
 h = h->next;
 i++;
 }
