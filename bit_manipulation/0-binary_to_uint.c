@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - opening of file
+ * binary_to_uint - opening of file
  * @b: binary code to convert to int
  * Return: Int conversion of binary code
  */
