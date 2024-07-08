@@ -20,6 +20,6 @@ return (0);
 i = (*head)->n;
 new = *head;
 *head = (*head)->next;
-free (new);
-return(i);
+free(new);
+return (i);
 }
