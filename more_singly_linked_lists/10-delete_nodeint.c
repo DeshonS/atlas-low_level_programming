@@ -36,7 +36,7 @@ while (i < index - 1)
 {
 if (ptr->next == NULL)
 {
-return (-1); 
+return (-1);
 }
 i++;
 ptr = ptr->next;
