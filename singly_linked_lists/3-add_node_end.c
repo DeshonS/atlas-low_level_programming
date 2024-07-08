@@ -20,12 +20,11 @@ if (new == NULL)
 {
 return (NULL);
 }
-if (str != NULL)
+if (str)
 {
-for (i = 0; str[i] != '\0'; i++)
-{
-new->str = strdup(str);
-}
+new->str = _strdup(str);
+while (str[i] != '\0')
+i++;
 new->len = i;
 }
 else
