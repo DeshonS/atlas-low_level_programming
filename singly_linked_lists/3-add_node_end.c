@@ -20,6 +20,11 @@ if (new == NULL)
 {
 return (NULL);
 }
+if (str == NULL)
+{
+new->str = NULL;
+new->len = 0;
+}
 for (i = 0; str[i] != '\0'; i++)
 {
 new->str = strdup(str);
