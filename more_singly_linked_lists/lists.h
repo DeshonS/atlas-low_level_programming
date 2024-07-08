@@ -2,17 +2,17 @@
 #define MAIN_FILE
 
 /**
- * struct list - linked list
- * @str: stored string
- * @len: length of string
- * @next: pointer to next pointer in the list
-*/
-
-typedef struct list
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * 
+ */
+typedef struct listint_s
 {
-char *str;
-int len;
-struct list *next;
+    int n;
+    struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
