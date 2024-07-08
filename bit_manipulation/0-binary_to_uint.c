@@ -27,5 +27,5 @@ if (b[i] == '1')
 newint = newint + 1;
 }
 }
-return newint;
+return (newint);
 }
