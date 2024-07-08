@@ -27,13 +27,13 @@ for (i = 0; str[i] != '\0'; i++)
 new->str = strdup(str);
 }
 new->len = i;
-new->next = NULL;
 }
 else
 {
 new->str = NULL;
 new->len = 0;
 }
+new->next = NULL;
 if (*head != NULL)
 {
 ptr = *head;
