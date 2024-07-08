@@ -21,5 +21,6 @@ return (NULL);
 new->str = strdup(str);
 new->next = *head;
 *head = new;
-return (*head);
+printf("[%d] %s", new->len, new->str);
+return (0);
 }
