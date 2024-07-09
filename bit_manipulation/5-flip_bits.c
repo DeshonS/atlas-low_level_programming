@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * flip_bits
+ * flip_bits - opening of file
  * @n: starting number
 * @m: ending number
 * Return: number of bits needed to go from one number to another
