@@ -24,7 +24,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-buffer = malloc(sizeof(text_content));
+buffer = malloc(sizeof(*text_content));
 if (buffer == NULL)
 {
 return (-1);
@@ -34,7 +34,7 @@ if (fd == -1)
 free(buffer);
 return (-1);
 }
-text = read(fd, buffer, text_content);
+text = read(fd, buffer, *text_content);
 if (text == -1)
 {
 free(buffer);
