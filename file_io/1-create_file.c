@@ -15,38 +15,35 @@
 
 int create_file(const char *filename, char *text_content)
 {
-int fd = open(filename, O_RDWR | O_CREAT);
-int text;
-int out;
-char *buffer;
+int i = 0;
+int fd, out;
 
 if (filename == NULL)
 {
-return (-1);
+    return (-1);
 }
-buffer = malloc(sizeof(*text_content));
-if (buffer == NULL)
+fd = open(filename, O_CREAT | O_RDWR);
+if (fd == NULL)
 {
-return (-1);
+    return (-1);
 }
-if (fd == -1)
+if (text_content == NULL)
 {
-free(buffer);
-return (-1);
+    close(fd);
+    return (1);
 }
-text = read(fd, buffer, *text_content);
-if (text == -1)
+else
 {
-free(buffer);
-return (-1);
+    while(text_content[i] != '\0')
+    {
+        i++;
+    }
 }
-out = write(STDOUT_FILENO, buffer, text);
-if (out == -1 || out != text)
+out = write(fd, text_content, i);
+if (out == NULL || out != i)
 {
-free(buffer);
-return (-1);
+    return (-1);
 }
 close(fd);
-free(buffer);
-return (out);
+return (1);
 }
