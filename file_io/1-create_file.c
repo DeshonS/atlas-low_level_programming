@@ -22,7 +22,7 @@ if (filename == NULL)
 {
     return (-1);
 }
-fd = open(filename, O_CREAT | O_RDWR);
+fd = open(filename, O_CREAT | O_RDWR | O_TRUNC);
 if (fd == -1)
 {
     return (-1);
