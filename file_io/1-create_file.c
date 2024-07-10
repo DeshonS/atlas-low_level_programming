@@ -23,7 +23,7 @@ if (filename == NULL)
     return (-1);
 }
 fd = open(filename, O_CREAT | O_RDWR);
-if (fd == NULL)
+if (fd == -1)
 {
     return (-1);
 }
@@ -40,7 +40,7 @@ else
     }
 }
 out = write(fd, text_content, i);
-if (out == NULL || out != i)
+if (out == -1 || out != i)
 {
     return (-1);
 }
