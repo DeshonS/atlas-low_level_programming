@@ -20,29 +20,29 @@ int fd, out;
 
 if (filename == NULL)
 {
-    return (-1);
+return (-1);
 }
 fd = open(filename, O_CREAT | O_RDWR | O_TRUNC , 0600);
 if (fd == -1)
 {
-    return (-1);
+return (-1);
 }
 if (text_content == NULL)
 {
-    close(fd);
-    return (1);
+close(fd);
+return (1);
 }
 else
 {
-    while(text_content[i] != '\0')
-    {
-        i++;
-    }
+while(text_content[i] != '\0')
+{
+i++;
+}
 }
 out = write(fd, text_content, i);
 if (out == -1 || out != i)
 {
-    return (-1);
+return (-1);
 }
 close(fd);
 return (1);
