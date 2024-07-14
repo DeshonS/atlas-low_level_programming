@@ -17,7 +17,8 @@ if (new == NULL)
 {
 return (NULL);
 }
-new->n = strdup(n);
+while ((*head)->next != NULL)
+new->n = n;
 new->next = *head;
 *head = new;
 return (new);
