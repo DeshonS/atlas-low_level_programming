@@ -30,7 +30,7 @@ ptr = ptr->next;
 ptr->next = new;
 if (*head != NULL)
 {
-(*head)->prev = new;
+(*head)->next = new;
 }
 }
 else
