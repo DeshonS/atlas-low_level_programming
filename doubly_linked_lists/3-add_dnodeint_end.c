@@ -18,6 +18,7 @@ if (new == NULL)
 {
 return (NULL);
 }
+new->n = n;
 new->next = NULL;
 if ((*head) != NULL)
 {
