@@ -19,5 +19,6 @@ return (NULL);
 }
 new->n = n;
 new->next = *head;
-return (new);
+*head = new;
+return (*head);
 }
