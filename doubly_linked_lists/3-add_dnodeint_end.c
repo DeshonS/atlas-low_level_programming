@@ -28,14 +28,14 @@ while (ptr->next != NULL)
 ptr = ptr->next;
 }
 ptr->next = new;
-}
-else
-{
-*head = new;
 if (*head != NULL)
 {
 (*head)->prev = new;
 }
+}
+else
+{
+*head = new;
 }
 return (new);
 }
