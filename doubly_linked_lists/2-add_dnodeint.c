@@ -17,7 +17,7 @@ if (new == NULL)
 {
 return (NULL);
 }
-while ((*head)->next != NULL)
+while (new->next != NULL)
 new->n = n;
 new->next = *head;
 *head = new;
