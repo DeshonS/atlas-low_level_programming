@@ -33,5 +33,9 @@ else
 {
 *head = new;
 }
+if (new->next != NULL)
+{
+new->next = new;
+}
 return (new);
 }
