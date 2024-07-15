@@ -26,8 +26,12 @@ if (idx == 0)
 {
 new->next = *h;
 new->prev = NULL;
+if (*h != NULL)
+{
+    (*h)->prev = new;
+}
 *h = new;
-return (*h);
+return (new);
 }
 for (i = 0; ptr != NULL; i++)
 {
