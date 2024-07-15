@@ -28,7 +28,7 @@ while (ptr->next != NULL)
 ptr = ptr->next;
 }
 ptr->next = new;
-if (ptr->next != NULL)
+if (ptr != NULL)
 {
 (ptr)->next = new;
 }
