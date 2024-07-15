@@ -18,7 +18,7 @@ if (new == NULL)
 {
 return (NULL);
 }
-new->array = malloc(sizeof(hash_node_t) * size);
+new->array = malloc(sizeof(hash_node_t *) * size);
 if (new->array == NULL)
 {
 free(new);
