@@ -28,24 +28,21 @@ new->next = *h;
 new->prev = NULL;
 if (*h != NULL)
 {
-    (*h)->prev = new;
+(*h)->prev = new;
 }
 *h = new;
 return (new);
 }
-for (i = 0; ptr != NULL; i++)
+for (i = 0; ptr != NULL && i < idx - 1; i++)
 {
-if (i == idx - 1)
-{
+free(new);
+return (NULL);
+}
 new->next = ptr->next;
 new->prev = ptr;
-ptr->next = new;
-}
-ptr = (ptr)->next;
-}
-if (idx > i)
+if (ptr->next != NULL)
 {
-return (NULL);
+ptr->next->prev = new;
 }
 return (new);
 }
