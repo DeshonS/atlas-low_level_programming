@@ -16,7 +16,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 unsigned long int i;
 hash_node_t *new, *ptr;
 char *val;
-
 if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 {
 return (0);
@@ -26,7 +25,6 @@ if (val == NULL)
 {
     return (0);
 }
-
 i = key_index((const unsigned char *)key, ht->size);
 ptr = ht->array[i];
 while (ptr != NULL)
