@@ -16,11 +16,16 @@ unsigned int i;
 dlistint_t *ptr;
 dlistint_t *new = malloc(sizeof(dlistint_t));
 
+if (new == NULL)
+{
+return (NULL);
+}
 new->n = n;
 ptr = *h;
 if (idx == 0)
 {
 new->next = *h;
+new->prev = NULL;
 *h = new;
 return (*h);
 }
@@ -29,6 +34,7 @@ for (i = 0; ptr != NULL; i++)
 if (i == idx - 1)
 {
 new->next = ptr->next;
+new->prev = ptr;
 ptr->next = new;
 }
 ptr = (ptr)->next;
