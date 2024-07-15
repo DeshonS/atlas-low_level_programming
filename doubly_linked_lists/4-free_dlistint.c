@@ -15,7 +15,6 @@ dlistint_t  *new;
 while ((new = head) != NULL)
 {
 head = head->next;
-free(new->n);
 free(new);
 }
 }
