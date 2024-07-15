@@ -27,11 +27,8 @@ while (ptr->next != NULL)
 {
 ptr = ptr->next;
 }
+new->prev = ptr;
 ptr->next = new;
-if (ptr != NULL)
-{
-(ptr)->next = new;
-}
 }
 else
 {
