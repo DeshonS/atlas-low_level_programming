@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "hash_tables.h"
 
 /**
@@ -16,10 +17,16 @@ unsigned long int i;
 hash_node_t *new, *ptr;
 char *val;
 
-if (ht == NULL || key == NULL || key == '\0' || value == NULL)
+if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 {
 return (0);
 }
+val = strdup(value);
+if (val == NULL)
+{
+    return (0);
+}
+
 i = key_index((const unsigned char *)key, ht->size);
 ptr = ht->array[i];
 while (ptr != NULL)
