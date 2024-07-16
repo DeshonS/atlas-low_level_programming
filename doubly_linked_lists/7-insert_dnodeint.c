@@ -33,9 +33,9 @@ if (*h != NULL)
 *h = new;
 return (new);
 }
-for (i = 0; ptr != NULL; i++)
+for (i = 0; ptr != NULL && i < idx - 1; i++)
 {
-if (i == idx)
+if (i == idx - 1)
 {
 new->next = ptr->next;
 new->prev = ptr;
