@@ -21,7 +21,7 @@ if (new == NULL)
 return (NULL);
 }
 new->n = n;
-/*ptr = *h;*/
+ptr = *h;
 if (idx == 0)
 {
 new->next = *h;
