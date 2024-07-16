@@ -48,7 +48,7 @@ if (new->key == NULL)
 {
 free(new);
 free(val);
-return(0);
+return (0);
 }
 new->value = val;
 new->next = ht->array[i];
