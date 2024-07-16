@@ -21,31 +21,38 @@ if (new == NULL)
 return (NULL);
 }
 new->n = n;
-ptr = *h;
+/*ptr = *h;*/
 if (idx == 0)
 {
 new->next = *h;
 new->prev = NULL;
 if (*h != NULL)
 {
-    (*h)->prev = new;
+(*h)->prev = new;
 }
 *h = new;
 return (new);
 }
-for (i = 0; ptr != NULL; i++)
+for (i = 0; ptr != NULL && i < idx - 1; i++)
 {
-if (i == idx - 1)
+/**if (i == idx - 1)
 {
 new->next = ptr->next;
 new->prev = ptr;
 ptr->next = new;
-}
+}*/
 ptr = (ptr)->next;
 }
-if (idx > i)
+if (ptr == NULL || idx > i)
 {
+free(new);
 return (NULL);
+}
+new->next = ptr->next;
+new->prev = ptr;
+if (ptr->next != NULL)
+{
+ptr->next->prev = new;
 }
 return (new);
 }
