@@ -33,7 +33,7 @@ if (*h != NULL)
 *h = new;
 return (new);
 }
-for (i = 0; ptr != NULL && i < idx - 1; i++)
+for (i = 0; ptr != NULL; i++)
 {
 if (i == idx - 1)
 {
