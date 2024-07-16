@@ -1,4 +1,4 @@
-/**#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -10,7 +10,7 @@
  * Return: 1 for success, -1 for failure
  */
 
-/**int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *ptr = *head;
 unsigned int i;
@@ -48,4 +48,3 @@ ptr->next->prev = ptr->prev;
 free(ptr);
 return (1);
 }
-*/
