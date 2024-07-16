@@ -30,9 +30,11 @@ ptr = ht->array[i];
 while (ptr != NULL)
 {
 if (strcmp(ptr->key, key) == 0)
+{
 free(ptr->value);
 ptr->value = val;
 return (1);
+}
 ptr = ptr->next;
 }
 new = malloc(sizeof(hash_node_t));
