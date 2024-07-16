@@ -22,7 +22,7 @@ return (0);
 }
 val = strdup(value);
 if (val == NULL)
-    return (0);
+return (0);
 i = key_index((const unsigned char *)key, ht->size);
 ptr = ht->array[i];
 while (ptr != NULL)
