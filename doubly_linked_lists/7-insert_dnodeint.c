@@ -28,14 +28,14 @@ new->next = *h;
 new->prev = NULL;
 if (*h != NULL)
 {
-    (*h)->prev = new;
+(*h)->prev = new;
 }
 *h = new;
 return (new);
 }
 for (i = 0; ptr != NULL; i++)
 {
-if (i == idx - 1)
+if (i == idx)
 {
 new->next = ptr->next;
 new->prev = ptr;
