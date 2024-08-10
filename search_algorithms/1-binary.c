@@ -43,7 +43,7 @@ return (-1);
 while (low <= high)
 {
 print_array(array, low, high);
-mid = low  + (high - low) / 2;
+mid = low + (high - low) / 2;
 if(array[mid] == value)
 {
 return (mid);
