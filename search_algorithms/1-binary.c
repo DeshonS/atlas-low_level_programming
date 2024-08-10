@@ -54,7 +54,11 @@ low = mid + 1;
 }
 else
 {
-high = mid + 1;
+if (mid == 0)
+{
+break;
+}
+high = mid - 1;
 }
 }
 return (-1);
