@@ -9,7 +9,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-fd = open(filename, "a");
+fd = fopen(filename, "a");
 if (fd == -1)
 {
 return (-1);
@@ -31,6 +31,6 @@ if (out == -1 || out != i)
 {
 return (-1);
 }
-close(fd);
+fclose(fd);
 return (1);
 }
