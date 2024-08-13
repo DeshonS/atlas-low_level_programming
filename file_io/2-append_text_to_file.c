@@ -1,23 +1,29 @@
 #include "main.h"
 
+/**
+ * append_text_to_file - opening of file
+ * @filename: name of file
+ * @text_content: text content
+ * Return: Always 0 (Success)
+*/
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 int i = 0;
-FILE *fd;
-int out;
+int fd, out;
 
 if (filename == NULL)
 {
 return (-1);
 }
-fd = fopen(filename, "a");
-if (fd == NULL)
+fd = open(filename, 'a');
+if (fd == -1)
 {
 return (-1);
 }
 if (text_content == NULL)
 {
-fclose(fd);
+close(fd);
 return (1);
 }
 else
@@ -27,11 +33,11 @@ while (text_content[i] != '\0')
 i++;
 }
 }
-out = fwrite(text_content, sizeof(char), i, fd);
+out = write(fd, text_content, i);
 if (out == -1 || out != i)
 {
 return (-1);
 }
-fclose(fd);
+close(fd);
 return (1);
 }
