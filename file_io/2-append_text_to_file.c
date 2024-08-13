@@ -3,7 +3,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 int i = 0;
-int fd, out;
+FILE *fd, *out;
 
 if (filename == NULL)
 {
