@@ -9,7 +9,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-fd = open(filename, O_RDWR);
+fd = open(filename, "a");
 if (fd == -1)
 {
 return (-1);
