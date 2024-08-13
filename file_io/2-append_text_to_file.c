@@ -17,7 +17,7 @@ return (-1);
 }
 if (text_content == NULL)
 {
-close(fd);
+fclose(fd);
 return (1);
 }
 else
