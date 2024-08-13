@@ -27,7 +27,7 @@ while (text_content[i] != '\0')
 i++;
 }
 }
-out = write(fd, text_content, i);
+out = fwrite(text_content, sizeof(char), i, fd);
 if (out == -1 || out != i)
 {
 return (-1);
