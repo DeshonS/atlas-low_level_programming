@@ -34,7 +34,7 @@ return (1);
 }
 else
 {
-while(text_content[i] != '\0')
+while (text_content[i] != '\0')
 {
 i++;
 }
