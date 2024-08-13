@@ -3,14 +3,15 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 int i = 0;
-FILE *fd, *out;
+FILE *fd;
+int out;
 
 if (filename == NULL)
 {
 return (-1);
 }
 fd = fopen(filename, "a");
-if (fd == -1)
+if (fd == NULL)
 {
 return (-1);
 }
