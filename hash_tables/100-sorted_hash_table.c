@@ -6,6 +6,7 @@
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *ht = malloc(sizeof(shash_table_t));
+
 	if (!ht)
 		return (NULL);
 
@@ -25,6 +26,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 shash_node_t *create_node(const char *key, const char *value)
 {
 	shash_node_t *node = malloc(sizeof(shash_node_t));
+
 	if (!node)
 		return (NULL);
 
